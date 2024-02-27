@@ -5,7 +5,7 @@
 PREFIX sosa: <http://www.w3.org/ns/sosa/>
 
 SELECT ?obs
-FROM <https://wosis.isric.org/>
+FROM <http://wosis.isric.org/>
 WHERE {
     ?obs a sosa:Observation .
 }
