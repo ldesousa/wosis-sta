@@ -1,0 +1,15 @@
+#+ summary: Returns all predicates and subjects related to an Observation
+#+          instance.
+#+ tags:
+#+   - sensor-things
+
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX wosis_obs: <http://wosis.isric.org/observation#>
+
+SELECT ?predicate ?object
+WHERE {
+    ?obs_uri a sosa:Observation ;
+             ?predicate ?object .
+    BIND (URI(CONCAT(wosis_obs, ?_id) AS ?obs_uri)
+}
+
