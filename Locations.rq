@@ -1,0 +1,12 @@
+#+ summary: Returns all Location instances in the graph
+#+ tags:
+#+   - sensor-things
+
+PREFIX glosis_sp: <http://w3id.org/glosis/model/siteplot/>
+
+SELECT ?loc
+FROM <http://wosis.isric.org/>
+WHERE {
+    ?loc a glosis_sp:GL_Site .
+}
+
