@@ -10,6 +10,5 @@ SELECT ?predicate ?object
 WHERE {
     ?obs_uri a sosa:Observation ;
              ?predicate ?object .
-    BIND (URI(CONCAT(wosis_obs, ?_id) AS ?obs_uri)
+    BIND (URI(CONCAT(wosis_obs, ?_id)) AS ?obs_uri)
 }
-
