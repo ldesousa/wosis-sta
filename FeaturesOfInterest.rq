@@ -1,0 +1,12 @@
+#+ summary: Returns all Features Of Interest instances in the graph
+#+ tags:
+#+   - sensor-things
+
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+
+SELECT ?foi
+FROM <http://wosis.isric.org/>
+WHERE {
+    ?foi a sosa:FeatureOfInterest .
+}
+
