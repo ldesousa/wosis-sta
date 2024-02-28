@@ -6,6 +6,9 @@ relies on the [GloSIS](https://github.com/glosis-ld/glosis) and [SOSA](https://w
 This repository provides a [SPARQL](https://www.w3.org/TR/sparql11-query/) based implementation of the [SensorThings API](https://docs.ogc.org/is/18-088/18-088.html)
 specification for the WoSIS knowledge graph using the [grlc](https://grlc.io/) API generator.
 
+## Live
+
+The automated grlc deployment of the protoype can accessed at [https://grlc.io/api/ldesousa/wosis-sta](https://grlc.io/api/ldesousa/wosis-sta).
 
 ## Copyright 
 
