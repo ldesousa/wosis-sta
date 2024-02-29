@@ -8,7 +8,6 @@ PREFIX wosis_obs: <http://wosis.isric.org/observation#>
 
 SELECT ?predicate ?object
 WHERE {
-    ?obs_uri a sosa:Observation ;
+    ?_id a sosa:Observation ;
              ?predicate ?object .
-    BIND (URI(CONCAT(wosis_obs, ?_id)) AS ?obs_uri)
 }
