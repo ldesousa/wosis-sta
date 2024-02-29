@@ -6,8 +6,9 @@
 PREFIX sosa: <http://www.w3.org/ns/sosa/>
 PREFIX wosis_obs: <http://wosis.isric.org/observation#>
 
-SELECT ?predicate ?object
+SELECT ?predicate ?object ?something
 WHERE {
     ?_id a sosa:Observation ;
              ?predicate ?object .
+    BIND (CONCAT("something ", ?_id) AS ?something)
 }
